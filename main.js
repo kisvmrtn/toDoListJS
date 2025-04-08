@@ -4,9 +4,8 @@ import { TODOLIST } from "./todoList.js";
 import Todos from "./Todos.js";
 
 
-let text = document.querySelector('#todoInput');
-let pElem = document.querySelector('section')
-let inputElem = document.querySelector('.asd')
-console.log(text)
-new TodoInput(inputElem)
-new Todos(TODOLIST,pElem, text)
+let text = document.querySelector('#todoInput'); //input
+let pElem = document.querySelector('section') // HTML elem, amibe a todo-kat rakjuk
+let inputElem = document.querySelector('.inputElem') // inputnak a div-je
+new TodoInput(inputElem) // input peldanyositas
+new Todos(TODOLIST,pElem, text) //todo lista peldanyositasa
